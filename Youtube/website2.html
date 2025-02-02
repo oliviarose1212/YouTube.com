@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+                background-image: url(https://wallpapercave.com/wp/wp8265516.jpg);
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: cover;
+                padding-bottom: 3000px;
+            }
+            .header {
+                position:fixed;
+                top:0;
+                right:0;
+                left:0;
+                height:45px;
+                background-color: white;
+                display:flex;
+                align-items: center;
+                opacity:0.6;
+                z-index: 200;
+            
+            }
+            .words {
+                font-family: Roboto;
+                font-size: 20px;
+                margin-left: 70px;
+                line-height: 12px;
+                font-weight: bold;
+            }
+            .box {
+                width:350px;
+                height:400px;
+                background-color: rgb(99, 12, 99);
+                opacity:0.5;
+                margin-left: 550px;
+                margin-top: 150px;
+                display:flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                border-radius: 15px;
+                box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+            }
+            .username {
+                width:300px;
+                height:40px;
+                border-radius: 15px;
+                margin-top: 20px ;
+                border-width: 2px;
+                border-style: solid;
+                border-color: rgb(108, 25, 186);
+            }
+            .password {
+                width:300px;
+                height:40px;
+                border-radius: 15px;
+                margin-top: 30px ;
+                border-width: 2px;
+                border-style: solid;
+                border-color: rgb(108, 25, 186);
+
+            }
+            .username::placeholder {
+                background-color: white;
+                opacity:1;
+                font-family: Roboto;
+                font-size: 15px;
+                color: black;
+                margin-left: 20px;
+                font-weight: 500;
+                padding-left: 15px;
+            }
+            .password::placeholder {
+                background-color: white;
+                opacity:1;
+                font-family: Roboto;
+                font-size: 15px;
+                color: black;
+                margin-left: 20px;
+                font-weight: 500;
+                padding-left: 15px;
+            }
+            .signup {
+                margin-top: 40px;
+                width:90px;
+                height:30px;
+                border-radius: 10px;
+                background-color: rgb(107, 49, 161);
+                border-width: 2px;
+                border-style: solid;
+                border-color: white;
+                color:white;
+                font-weight: bold;
+                cursor: pointer;
+            }
+            .image {
+                position:relative;
+                cursor: pointer;
+                transition-duration: 0.2s;
+            }
+            .imagesub {
+                pointer-events: none;
+                opacity:0;
+                position:absolute;
+                
+            }
+            .sub {
+                height:80px;
+                font-family: Roboto;
+                font-size: 22px;
+                color:white;
+                display:flex;
+                align-items: center;
+                padding-left: 30px;
+                cursor:pointer;
+
+            }    
+            .sub:hover {
+                background-color: white;
+                color:rgb(99,12,99);
+            }
+            .image:hover .imagesub {
+                position:absolute;
+                width:200px;
+                position:fixed;
+                top:45px;
+                bottom:0;
+                left:0;
+                background-color:rgb(99, 12, 99) ;
+                margin-top: -1px;
+                opacity:1;
+                pointer-events: all;
+            }
+            .image:hover .words {
+                opacity:0;
+            }
+            .words {
+                position:relative;
+                cursor: pointer;
+                height:45px;
+                display:flex;
+                align-items: center;
+            }
+            .wordssub {
+                position:absolute;
+                margin-left: -25px;
+                margin-top: 220px;
+                opacity:0;
+                pointer-events: none;
+
+            }
+            .sub2 {
+                height:50px;
+                display:flex;
+                align-items: center;
+                padding-left: 18px;
+                font-family: Roboto;
+                font-size: 20px;
+                color:rgb(99,12,99);
+            }
+            .sub2:hover {
+                background-color: rgb(99,12,99);
+                color:white;
+            }
+            .words:hover .wordssub {
+                width:150px;
+                height:200px;
+                background-color: white;
+                opacity:1;
+                pointer-events: all;
+                cursor: pointer;
+
+            }
+            .login {
+                font-family: Roboto;
+                font-size: 20px;
+                margin-left: 70px;
+                line-height: 12px;
+                font-weight: bold;
+                cursor:pointer;
+                display: flex;
+            }
+            .arrow {
+                font-size: 20px;
+                margin-left: 10px;
+                line-height: 12px;
+                font-weight: bold;
+                cursor:pointer;
+                transition-duration: 1s;
+            }
+            .login:hover {
+                background-color: rgb(99, 12, 99);
+                color:white;
+                height:45px;
+                display:flex;
+                align-items: center;
+                padding-right: 20px;
+                padding-left: 20px;
+                transition-duration: 1s;
+                
+            }
+            .login:hover .arrow {
+                transform: rotate(180deg);
+                transition-timing-function: ease-in;
+            }
+                
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <div class="image"><img style="width:30px;
+            opacity:1;" src="headers/hamburger-menu.svg">
+            <div class="imagesub">
+                <div class="sub">My Profile</div>
+                <div class="sub">Cart</div>
+                <div class="sub">Purchases</div>
+                <div class="sub">Login</div>
+                <div class="sub">My Profile</div>
+                <div class="sub">Cart</div>
+                <div class="sub">Purchases</div>
+                <div class="sub">Login</div>
+                <div class="sub">My Profile</div>
+                <div class="sub">Cart</div>
+                <div class="sub">Purchases</div>
+                <div class="sub">Login</div>
+                <div class="sub">My Profile</div>
+                <div class="sub">Cart</div>
+                <div class="sub">Purchases</div>
+                <div class="sub">Login</div>
+            </div>
+        </div>
+            <div class="words">My profile
+                <div class="wordssub">
+                    <div class="sub2">Account</div>
+                    <div class="sub2">User</div>
+                    <div class="sub2">Settings</div>
+                </div>
+            </div>
+            <div class="words">Cart
+                <div class="wordssub">
+                    <div class="sub2">Shopping</div>
+                    <div class="sub2">Items</div>
+                    <div class="sub2">Add to cart</div>
+                </div>
+            </div>
+            <div class="words">Purchases
+                <div class="wordssub">
+                    <div class="sub2">Payments</div>
+                    <div class="sub2">Booked</div>
+                    <div class="sub2">Delivered</div>
+                </div>
+            </div>
+            <div class="login">Login <div class="arrow">&#10515;</div>
+                    
+                </div>
+            </div>
+       
+        </div>
+        <div class="box">
+            <input class="username" type="text" placeholder="Username or email">
+            <input class="password" type="password" placeholder="Password">
+            <div>
+                <button class="signup">Sign up</button>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+        <style>
+            p {
+                font-family: Roboto, Arial;
+            }
+        
+            .thumbnail {
+                display: inline-block;
+                width:200px;
+                margin-right: 8px;
+            }
+            .video-texts {
+                display: inline-block;
+                width:250px;
+                vertical-align: top;
+            }
+            .thumbnail-pic {
+                width:100%;
+            }
+            .video-title {
+                font-size: 15px;
+                font-weight: 500;
+                margin-top: 0;
+                
+            }
+            .video-author,
+            .video-stats {
+                font-size: 13px;
+                color: rgb(96,96,96);
+
+            }
+            .video-preview {
+                margin-bottom: 8px;
+            }
+            .youtube {
+                display: inline-block;
+                margin-right: 20px;
+            }
+            .profile {
+                width:50px;
+                display: inline-block;
+                
+            }
+            .cat-pic {
+                width:35px;
+                height:35px;
+                border-radius:35px;
+                vertical-align: middle;
+                
+            }
+            .Texts {
+                width: 150px;
+                display:inline-block;
+                margin-right: 5px;
+                vertical-align: middle;
+            }
+            .name {
+                font-weight: bold;
+                font-size: 15px;
+                margin-top: 0;
+                margin-bottom: 0;
+                line-height:20px;
+            }
+            .des {
+                font-size: 15px;
+                color:rgb(140, 136, 136);
+                margin-top: 0;
+                margin-bottom: 0;
+                line-height:20px;
+            }
+            .popular {
+                font-size: 12px;
+                color:rgb(140, 136, 136);
+                margin-top: 0;
+                margin-bottom: 0;
+                line-height:20px;
+            }
+            .follow {
+              
+                width:60px;
+                border:none;
+                background-color: rgb(0, 132, 255);
+                color:white;
+                font-weight: 700;
+                border-radius: 4px;
+                padding-left: 2px;
+                padding-right: 2px;
+                padding-top: 2px;
+                padding-bottom: 2px;
+                vertical-align: middle;
+                display:inline-block;
+                
+
+
+            }
+            .cats {
+                width: 800px;
+                margin-bottom: 8px;
+            }
+            .button {
+                width: 100px;
+                display: inline-block;
+            }
+            .twitter {
+                border-color: rgb(0, 102, 255);
+                width: 800px;
+                height: 200px;
+            }
+            .prof {
+                display:inline-block;
+                width:35px;
+                
+            }
+            .profi {
+                width:35px;
+                height:35px;
+                border-radius: 35px;
+                vertical-align: middle;
+                margin-left: 4px;
+                margin-right: 4px;
+
+            }
+            .frie {
+                display: inline-block;
+                font-size: 12px;
+                color: rgb(96,96,96);
+                vertical-align: middle;
+                margin-left: 4px;
+            }
+            .cats2 {
+                width:150px;
+                height:150px;
+            }
+            .cat {
+                width:100%;
+                height:100%;
+            }
+            .oliver {
+                font-size: 15px;
+                font-weight: bold;
+                margin-top: 0;
+                margin-bottom: 0;
+                margin-left: 4px;
+                line-height: 20px;
+            }
+            .add {
+                width:100px;
+                border:none;
+                background-color: rgb(0, 132, 255);
+                color:white;
+                font-weight: 700;
+                border-radius: 4px;
+                padding-left: 2px;
+                padding-right: 2px;
+                padding-top: 2px;
+                padding-bottom: 2px;
+                vertical-align: middle;
+                margin-top: 8px;
+                margin-left: 4px;
+
+            }
+            
+            .grid {
+                display:grid;
+                grid-template-columns: 200px 200px 200px;
+                column-gap: 20px;
+                box-shadow: 1px 1px 10px rgba(15,25,15,0.4);
+            }
+            .box {
+                width:200px;
+                height:200px;
+                background-color: pink;
+                transition:width 2s,height 2s,background-color 2s,rotate 2s;
+            }
+            .box:no-button{
+                width: 300px;
+                height:300px;
+                background-color: blueviolet;
+                rotate: 90deg;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="youtube">
+
+        <div class="video-preview">
+            <div class="thumbnail">
+                <img class="thumbnail-pic" src="thumbnails/thumbnail-1.webp">
+            </div>
+            <div class="video-texts">
+                <p class="video-title">How to compete against CS degrees (as a self-taught dev)</p>
+                <p class="video-author">SuperSimpleDev</p>
+                <p class="video-stats">1.5K views &#183; 4 months ago</p>
+            </div>
+        </div>
+        <div class="video-preview">
+            <div class="thumbnail">
+                <img class="thumbnail-pic" src="thumbnails/thumbnail-2.webp">
+            </div>
+            <div class="video-texts">
+                <p class="video-title">Which programming language to learn first 2022 (with charts)</p>
+                <p class="video-author">SuperSimpleDev</p>
+                <p class="video-stats">5.7K views &#183; 11 months ago</p>
+            </div>
+        </div>
+    </div>
+    <div class="twitter">
+    <div class="cats">
+        <div class="profile">
+            <img class="cat-pic" src="kitten-2354016_1280.jpg">
+        </div>
+        <div class="Texts">
+            <p class="name">Oliver</p>
+            <p class="des">the cat</p>
+            <p class="popular">Popular</p>
+        </div>
+        <div class="button">
+            <button class="follow">Follow</button>
+        </div>
+    </div>
+    <div class="cats">
+        <div class="profile">
+            <img class="cat-pic" src="kitty-cat-kitten-pet-45201.jpeg">
+        </div>
+        <div class="Texts">
+            <p class="name">Mimi</p>
+            <p class="des">Sleepy cat</p>
+            <p class="popular">Popular</p>
+        </div>
+        <div class="button">
+            <button class="follow">Follow</button>
+        </div>
+    </div>
+</div>
+<div class="grid">
+    
+        <div class="profile1">
+            <img class="cat" src="kitten-2354016_1280.jpg">
+        
+            <p class="oliver">Oliver</p>
+        <div class="mutual-friends">
+            <img class="profi" src="channelprofiles/channel-2.jpeg">
+            <p class="friends">2 mutual friends</p>
+        
+            <button class="add">Add Friend</button>
+        
+        </div>
+    
+        <div class="profile">
+            <img class="cat" src="kitty-cat-kitten-pet-45201.jpeg">
+        
+            <p class="oliver">Mimi</p>
+        <div class="mutual-friends">
+            <img class="profi" src="channelprofiles/channel-2.jpeg">
+            <p class="friends">2 mutual friends</p>
+        
+            <button class="add">Add Friend</button>
+        
+        </div>
+        <div class="profile">
+            <img class="cat" src="kitten-2354016_1280.jpg">
+        
+            <p class="oliver">Oliver</p>
+        <div class="mutual-friends">
+            <img class="profi" src="channelprofiles/channel-2.jpeg">
+            <p class="friends">2 mutual friends</p>
+        
+            <button class="add">Add Friend</button>
+        
+        </div>
+
+    </div>
+    <style>
+        /* Style The Dropdown Button */
+        .dropbtn {
+          background-color: #4CAF50;
+          color: white;
+          padding: 16px;
+          font-size: 16px;
+          border: none;
+          cursor: pointer;
+        }
+        
+        /* The container <div> - needed to position the dropdown content */
+        .dropdown {
+          position: relative;
+          display: inline-block;
+        }
+        
+        /* Dropdown Content (Hidden by Default) */
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: #f9f9f9;
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          z-index: 1;
+        }
+        
+        /* Links inside the dropdown */
+        .dropdown-content a {
+          color: black;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+        }
+        
+        /* Change color of dropdown links on hover */
+        .dropdown-content a:active {background-color: #f1f1f1}
+        
+        /* Show the dropdown menu on hover */
+        .dropdown:active .dropdown-content {
+          display: block;
+        }
+        
+        /* Change the background color of the dropdown button when the dropdown content is shown */
+        .dropdown:focus .dropbtn {
+          background-color: #3e8e41;
+        }
+        </style>
+        
+        <div class="dropdown">
+          <button class="dropbtn">Dropdown</button>
+          <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,330 @@
+
+p {
+    font-family: Roboto, Arial;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+body {
+    margin:0;
+    padding-top:80px;
+    padding-left: 96px;
+    padding-right: 24px;
+    background-color: rgb(248,248,248);
+}
+.thumbnail {
+    width: 100%;   
+}
+.searchbar {
+    font-size: 15px;
+    margin-left: 5px;
+}
+.channel-pic {   
+    vertical-align: top;
+    position:relative;
+}
+.hovering{
+    position:absolute;
+    width:250px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    padding-left: 14px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-radius: 4px;
+    bottom:-30px;
+    opacity:0;
+    pointer-events: none;
+    transition:opacity 0.5s;
+    background-color: white;
+}
+.channel-pic:hover .hovering{
+    opacity:1;
+}
+.image {
+    width:40px;
+    height:40px;
+    border-radius: 20px;
+    display:inline-block;
+    margin-left: 5px;
+    margin-right: 8px;
+}
+.box {
+    display:inline-block;
+    width:150px;
+    
+}
+.channel {
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 20px;
+}
+.subscribers {
+    font-size: 12px;
+    color: gray;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 20px;
+}
+.profile-pic {
+    width:36px;
+    display:inline-block;
+    border-radius: 50px;
+}
+.text{
+    margin-top: 0;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+.thumbnail-row {
+    margin-bottom: 8px;
+    position:relative;
+
+}
+.video-author {
+    margin-bottom: 4px;
+}
+.video-author,
+.video-stats {
+    font-size: 12px;
+    color: rgb(96,96,96);
+}
+.video-info-grid {
+    display:grid;
+    grid-template-columns: 50px 1fr;
+}
+.video-grid {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 16px;
+    row-gap: 40px;
+   
+}
+@media(max-width:800px) {
+    .video-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media(min-width:1500px){
+    .video-grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+@media(min-width:801px) and (max-width:1499) {
+    .video-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    } 
+}
+
+.header {
+    height:55px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    background-color: white;
+    border-bottom-width:1px;
+    border-bottom-style:solid;
+    border-bottom-color:rgb(228, 228, 228);
+    z-index:100;
+
+}
+.left-section {
+    
+    display:flex;
+    align-items: center;
+}
+.middle-section {
+    
+    flex:1;
+    margin-left: 70px;
+    margin-right: 35px;
+    max-width: 500px;
+    display:flex;
+    align-items: center;
+}
+.search-button {
+    height:40px;
+    width:66px;
+    background-color: rgb(240,240,240);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(192, 192, 192);
+    margin-left: -1px;
+    margin-right: 10px;
+    
+    
+}
+.search-button,
+.voice-button,
+.upload-container,
+.youtube-apps,
+.notification-container {
+    position:relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+}
+.search-button .tool-tip,
+.voice-button .tool-tip,
+.upload-container .tool-tip,
+.youtube-apps .tool-tip,
+.notification-container .tool-tip {
+    font-family: Roboto,Arial;
+    position:absolute;
+    background-color: rgb(84, 81, 81);
+    color:white;
+    padding-top: 8px;
+    padding-right: 8px;
+    padding-bottom: 8px;
+    padding-left:8px ;
+    border-radius: 2px;
+    font-size:12px;
+    bottom:-30px;
+    opacity:0;
+    transition:opacity 0.15s;
+    pointer-events: none;
+    white-space: nowrap;
+}
+.search-button:hover .tool-tip,
+.voice-button:hover .tool-tip,
+.upload-container:hover .tool-tip,
+.youtube-apps:hover .tool-tip,
+.notification-container:hover .tool-tip {
+    opacity:0.9;
+    
+}
+.voice-button {
+    height:40px;
+    width:40px;
+    border-radius: 20px;
+    border:none;
+    background-color: rgb(245,245,245);
+}
+.voice-icon {
+    height:24px;
+    
+   
+}
+.right-section {
+    
+    width:180px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+.hamburger {
+    height:24px;
+    margin-left: 24px;
+    margin-right: 24px;
+}
+.youtube-logo {
+    height:20px;
+}
+.searchbar {
+    flex:1;
+    height:36px;
+    padding-left: 10px;
+    font-size: 16px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(192, 192, 192);
+    border-radius: 2px;
+    box-shadow: inset 1px 2px 3px rgba(0,0,0,0.05);
+}
+
+.searchbar::placeholder {
+    font-family: Roboto,Arial;
+    font-size:16px;
+
+}
+.search-icon {
+    height:25px;
+    
+}
+.upload {
+    height:24px;
+}
+.apps {
+    height:24px;
+}
+.notifications {
+    height:24px;
+}
+.notification-container {
+    position:relative;
+}
+.notifications-count {
+    position:absolute;
+    top:-2px;
+    right:-5px;
+    background-color: rgb(200, 0, 0);
+    color:white;
+    font-family: Roboto,Arial;
+    font-size:11px;
+    padding-left: 5px;
+    padding-right:5px;
+    padding-top:2px;
+    padding-bottom:2px;
+    border-radius: 10px;
+}
+.user-picture {
+    height:32px;
+    border-radius: 16px;
+}
+.sidebar {
+    position:fixed;
+    left:0;
+    bottom:0;
+    top:55px;
+    background-color: white;
+    z-index:200;
+    width:72px;
+    padding-top: 5px;
+}
+.video-time {
+    background-color: black;
+    color:white;
+    position:absolute;
+    bottom:8px;
+    right:5px;
+    font-family: Roboto,Arial;
+    font-size: 12px;
+    font-weight:500;
+    padding:4px;
+    border-radius: 2px;
+}
+.sidebar-link {
+    
+    height:74px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    
+}
+
+
+.sidebar-link:hover {
+    background-color: rgb(235,235,235);
+    
+}
+.sidebar-link img {
+    height:24px;
+    margin-bottom: 4px;
+}
+.sidebar-link div {
+    font-family:Roboto,Arial;
+    font-size: 10px;
+
+}
